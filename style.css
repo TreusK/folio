@@ -1,0 +1,118 @@
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 300px;
+}
+
+
+/* General */
+:root {
+  --main-bg-color: rgb(16, 1, 100);
+  --main-text-color: #f0f0f0;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  color:  var(--main-text-color);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5;
+}
+
+.container {
+  padding: 0 10%;
+  margin: 0 auto;
+}
+
+
+img {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+
+/* Header */
+header {
+  display: flex;
+  justify-content: flex-end;
+  background-color: blue;
+  position: sticky;
+  top: 0;
+}
+
+header p {
+  padding: 0.5em;
+  font-size: 0.8rem;
+}
+
+.headerName {
+  margin-right: auto;
+}
+
+
+
+/*    Main    */
+/* About */
+#about {
+  margin-top: 100px;
+}
+
+#about h1 {
+  margin-bottom: 20px;
+}
+
+
+/* Techs */
+#techs {
+  margin-top: 30px;
+}
+
+
+
+/* Projects */
+
+.cardProject {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  font-size: 0.8rem;
+}
+
+.imgContainer {
+  max-width: 400px;
+}
+
+.imgContainer img {
+  border-radius: 5px;
+}
+
+
+
+/* Media Queries */
+@media(min-width: 500px) {
+  .cardProject {
+    flex-direction: row;
+  }
+  .imgContainer {
+    margin: 0 10px;
+    flex: 6;
+  }
+  .projectInfo {
+    flex: 4;
+    align-self: flex-start;
+  }
+}
+
+@media(min-width: 630px) {
+  .container {
+    width: 500px;
+    padding: 0;
+  }
+
+  
+}

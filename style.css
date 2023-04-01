@@ -1,4 +1,4 @@
-* { 
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -12,19 +12,20 @@ body {
 
 /* General */
 :root {
-  --main-bg-color: rgb(16, 1, 100);
+  --main-bg-color: #14182c;
+  --extra-bg-color: #1b213b;
   --main-text-color: #f0f0f0;
 }
 
 body {
   background-color: var(--main-bg-color);
-  color:  var(--main-text-color);
+  color: var(--main-text-color);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.5;
 }
 
 .container {
-  padding: 0 10%;
+  padding: 0 3%;
   margin: 0 auto;
 }
 
@@ -39,14 +40,14 @@ img {
 header {
   display: flex;
   justify-content: flex-end;
-  background-color: blue;
+  background-color: var(--main-bg-color);
   position: sticky;
   top: 0;
 }
 
 header p {
   padding: 0.5em;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .headerName {
@@ -57,12 +58,21 @@ header p {
 
 /*    Main    */
 /* About */
-#about {
-  margin-top: 100px;
-}
 
 #about h1 {
   margin-bottom: 20px;
+  margin-top: 50px;
+  padding-top: 100px;
+  line-height: 1.3;
+  font-size: 2.5rem;
+  background-image: url("./imgs/bgGeo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#about p {
+  font-size: 1.2rem;
 }
 
 
@@ -78,9 +88,8 @@ header p {
 .cardProject {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-top: 30px;
-  font-size: 0.8rem;
+  margin-top: 20px;
+  font-size: 0.9rem;
 }
 
 .imgContainer {
@@ -98,21 +107,29 @@ header p {
   .cardProject {
     flex-direction: row;
   }
+
   .imgContainer {
-    margin: 0 10px;
+    margin-right: 10px;
     flex: 6;
   }
+
   .projectInfo {
     flex: 4;
-    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .projectLinks {
+    margin-top: auto;
+    padding-bottom: 20px;
   }
 }
 
 @media(min-width: 630px) {
   .container {
-    width: 500px;
+    width: 600px;
     padding: 0;
   }
 
-  
+
 }

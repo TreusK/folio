@@ -69,6 +69,17 @@ header p {
   background-image: url("./imgs/bgGeo.png");
   background-repeat: no-repeat;
   background-size: contain;
+  animation: hue 10s infinite;
+  -webkit-animation: hue 10s infinite;
+}
+
+@keyframes hue {
+  0%, 100%  { -webkit-filter: hue-rotate(0deg); }
+  50% { -webkit-filter: hue-rotate(170deg); }
+}
+@-webkit-keyframes hue {
+  0%, 100%  { -webkit-filter: hue-rotate(0deg); }
+  50% { -webkit-filter: hue-rotate(170deg); }
 }
 
 #about p {
@@ -116,6 +127,7 @@ header p {
 .imgHover:hover {
   opacity: 1;
 }
+
 
 
 /* Media Queries */

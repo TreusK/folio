@@ -15,6 +15,7 @@ body {
   --main-bg-color: #14182c;
   --extra-bg-color: #1b213b;
   --main-text-color: #f0f0f0;
+  --extra-text-color: #ce5656;
 }
 
 body {
@@ -101,6 +102,7 @@ header p {
   flex-direction: column;
   margin-top: 20px;
   font-size: 0.9rem;
+  user-select: none;
 }
 
 .projectName {
@@ -126,6 +128,15 @@ header p {
 }
 .cardProject:hover .imgHover {
   opacity: 1;
+}
+
+.cardProject a {
+  color: var(--main-text-color);
+  padding: 0 5px;
+}
+
+.cardProject a:hover {
+  color: var(--extra-text-color);
 }
 
 

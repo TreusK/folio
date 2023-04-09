@@ -15,7 +15,7 @@ body {
   --main-bg-color: #14182c;
   --extra-bg-color: #1b213b;
   --main-text-color: #f0f0f0;
-  --extra-text-color: #ce5656;
+  --extra-text-color: #c56479;
 }
 
 body {
@@ -23,6 +23,18 @@ body {
   color: var(--main-text-color);
   font-family: 'Kanit', sans-serif;
   line-height: 1.5;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .container {
@@ -75,12 +87,27 @@ header p {
 }
 
 @keyframes hue {
-  0%, 100%  { -webkit-filter: hue-rotate(-50deg); }
-  50% { -webkit-filter: hue-rotate(170deg); }
+
+  0%,
+  100% {
+    -webkit-filter: hue-rotate(-50deg);
+  }
+
+  50% {
+    -webkit-filter: hue-rotate(170deg);
+  }
 }
+
 @-webkit-keyframes hue {
-  0%, 100%  { -webkit-filter: hue-rotate(-50deg); }
-  50% { -webkit-filter: hue-rotate(170deg); }
+
+  0%,
+  100% {
+    -webkit-filter: hue-rotate(-50deg);
+  }
+
+  50% {
+    -webkit-filter: hue-rotate(170deg);
+  }
 }
 
 #about p {
@@ -100,13 +127,16 @@ header p {
 .cardProject {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-top: 20px;
   font-size: 0.9rem;
   user-select: none;
+  text-align: center;
 }
 
 .projectName {
   font-weight: 600;
+  color: var(--extra-text-color);
 }
 
 .imgContainer {
@@ -126,6 +156,7 @@ header p {
   opacity: 0;
   transition: opacity 0.8s ease-out;
 }
+
 .cardProject:hover .imgHover {
   opacity: 1;
 }
@@ -145,6 +176,8 @@ header p {
 @media(min-width: 500px) {
   .cardProject {
     flex-direction: row;
+    text-align: left;
+    align-items: stretch;
   }
 
   .imgContainer {
@@ -169,6 +202,4 @@ header p {
     width: 600px;
     padding: 0;
   }
-
-
 }

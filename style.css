@@ -18,6 +18,10 @@ body {
   --extra-text-color: #c56479;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--main-bg-color);
   color: var(--main-text-color);
@@ -59,9 +63,15 @@ header {
   z-index: 2;
 }
 
-header p {
+header p, header a {
   padding: 0.5em;
   font-size: 1rem;
+  color: var(--main-text-color);
+  text-decoration: none;
+}
+
+header a:hover {
+  color: var(--extra-text-color);
 }
 
 .headerName {
@@ -87,24 +97,20 @@ header p {
 }
 
 @keyframes hue {
-
   0%,
   100% {
     -webkit-filter: hue-rotate(-50deg);
   }
-
   50% {
     -webkit-filter: hue-rotate(170deg);
   }
 }
 
 @-webkit-keyframes hue {
-
   0%,
   100% {
     -webkit-filter: hue-rotate(-50deg);
   }
-
   50% {
     -webkit-filter: hue-rotate(170deg);
   }
@@ -113,13 +119,6 @@ header p {
 #about p {
   font-size: 1.2rem;
 }
-
-
-/* Techs */
-#techs {
-  margin-top: 30px;
-}
-
 
 
 /* Projects */

@@ -76,6 +76,7 @@ header a:hover {
 
 .headerName {
   margin-right: auto;
+  font-weight: bold;
 }
 
 
@@ -118,10 +119,19 @@ header a:hover {
 
 #about p {
   font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+span {
+  color: var(--extra-text-color);
 }
 
 
 /* Projects */
+
+#projects {
+  margin-top: 120px;
+}
 
 .cardProject {
   display: flex;
@@ -171,6 +181,37 @@ header a:hover {
 
 
 
+/* Contact */
+
+#contact {
+  margin: 100px 0;
+}
+
+#contact h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.socialIconsContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  padding: 15px 20px;
+  border-radius: 10px;
+  border: solid 2px white;
+  margin: 0 10px;
+  transition: background-color .5s linear, border .5s linear;
+}
+
+.icon:hover {
+  background-color: var(--extra-bg-color);
+  border: solid 2px var(--extra-text-color);
+}
+
+
+
 /* Media Queries */
 @media(min-width: 500px) {
   .cardProject {
@@ -200,5 +241,15 @@ header a:hover {
   .container {
     width: 600px;
     padding: 0;
+  }
+  #contact {
+    margin-left: 40px;
+  }
+  #contact h2 {
+    margin-left: 50px;
+    text-align: left;
+  }
+  .socialIconsContainer {
+    justify-content: flex-start;
   }
 }

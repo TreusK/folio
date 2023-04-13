@@ -22,10 +22,15 @@ html {
   scroll-behavior: smooth;
 }
 
+@font-face {
+  font-family: "Josefin Sans";
+  src: url(./font/JosefinSans-Regular.ttf);
+}
+
 body {
   background-color: var(--main-bg-color);
   color: var(--main-text-color);
-  font-family: 'Kanit', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   line-height: 1.5;
   animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;

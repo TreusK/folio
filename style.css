@@ -194,6 +194,7 @@ span {
   display: flex;
   justify-content: center;
   perspective: 1000px;
+  transition: margin .5s ease-in;
 }
 
 .techsContainer {
@@ -210,11 +211,38 @@ span {
 
 .techBox {
   background-color: lightgray;
-  border: solid 1px black;
+  border: solid 2px black;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 2px 2px 15px black;
+}
+
+.reactBox {
+  box-shadow: inset 2px -2px 5px rgb(191, 250, 250);
+}
+.cssBox {
+  box-shadow: inset 2px -2px 5px lightskyblue;
+}
+.htmlBox {
+  box-shadow: inset 2px -2px 5px lightcoral;
+}
+.JSBox {
+  box-shadow: inset 2px -2px 5px lightslategray;
+}
+.gitBox {
+  box-shadow: inset 2px -2px 5px  lightsalmon;
+}
+.tailwindBox {
+  box-shadow: inset 2px -2px 5px lightseagreen;
+}
+.mongoBox {
+  box-shadow: inset 2px -2px 5px  rgb(114, 216, 114);
+}
+.nodeBox {
+  box-shadow: inset 2px -2px 5px lightgreen;
+}
+.firebaseBox {
+  box-shadow: inset 2px -2px 5px  rgb(231, 231, 102);
 }
 
 .JSLogo, .cssLogo {
